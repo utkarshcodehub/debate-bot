@@ -4,7 +4,8 @@
 
 import aiosqlite
 
-DB_PATH = "debate_bot.db"
+import os
+DB_PATH = os.path.join(os.path.dirname(__file__), "debate_bot.db")
 
 
 async def init_db():
